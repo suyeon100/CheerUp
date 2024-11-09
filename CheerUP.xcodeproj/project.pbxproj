@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D5712B22CDB3159006850D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712B12CDB3159006850D4 /* AppDelegate.swift */; };
+		1D5712B42CDB3159006850D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712B32CDB3159006850D4 /* SceneDelegate.swift */; };
+		1D5712B62CDB3159006850D4 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712B52CDB3159006850D4 /* WriteViewController.swift */; };
+		1D5712B92CDB3159006850D4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712B82CDB3159006850D4 /* Base */; };
+		1D5712BC2CDB3159006850D4 /* CheerUP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712BA2CDB3159006850D4 /* CheerUP.xcdatamodeld */; };
+		1D5712BE2CDB315A006850D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712BD2CDB315A006850D4 /* Assets.xcassets */; };
+		1D5712C12CDB315A006850D4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712C02CDB315A006850D4 /* Base */; };
+		1D5712C92CDB34B7006850D4 /* Cheer Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712C82CDB34B7006850D4 /* Cheer Up.png */; };
+		1D5712CC2CDB551E006850D4 /* ReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712CB2CDB551E006850D4 /* ReadTableViewCell.xib */; };
+		1D5712CD2CDB551E006850D4 /* ReadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712CA2CDB551E006850D4 /* ReadTableViewCell.swift */; };
+		1D5712CF2CDB6283006850D4 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712CE2CDB6283006850D4 /* TextViewController.swift */; };
+		1D5712D12CDE03F2006850D4 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712D02CDE03F2006850D4 /* EditViewController.swift */; };
+		8B86653E6C0F8D88F8E60E8A /* Pods_CheerUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98831F21C97EAAA0D504C584 /* Pods_CheerUP.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D5712AE2CDB3159006850D4 /* CheerUP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheerUP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5712B12CDB3159006850D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1D5712B32CDB3159006850D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1D5712B52CDB3159006850D4 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		1D5712B82CDB3159006850D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1D5712BB2CDB3159006850D4 /* CheerUP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheerUP.xcdatamodel; sourceTree = "<group>"; };
+		1D5712BD2CDB315A006850D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1D5712C02CDB315A006850D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1D5712C22CDB315A006850D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D5712C82CDB34B7006850D4 /* Cheer Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cheer Up.png"; path = "../../Cheer Up.png"; sourceTree = "<group>"; };
+		1D5712CA2CDB551E006850D4 /* ReadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTableViewCell.swift; sourceTree = "<group>"; };
+		1D5712CB2CDB551E006850D4 /* ReadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadTableViewCell.xib; sourceTree = "<group>"; };
+		1D5712CE2CDB6283006850D4 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		1D5712D02CDE03F2006850D4 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		6465AA2DD768D32B85359A25 /* Pods-CheerUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUP.debug.xcconfig"; path = "Target Support Files/Pods-CheerUP/Pods-CheerUP.debug.xcconfig"; sourceTree = "<group>"; };
+		964CB6E2CCD5CA8F3F11AEFC /* Pods-CheerUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUP.release.xcconfig"; path = "Target Support Files/Pods-CheerUP/Pods-CheerUP.release.xcconfig"; sourceTree = "<group>"; };
+		98831F21C97EAAA0D504C584 /* Pods_CheerUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheerUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D5712AB2CDB3159006850D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B86653E6C0F8D88F8E60E8A /* Pods_CheerUP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1574185C6201CA067EFC7493 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98831F21C97EAAA0D504C584 /* Pods_CheerUP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D5712A52CDB3159006850D4 = {
+			isa = PBXGroup;
+			children = (
+				1D5712B02CDB3159006850D4 /* CheerUP */,
+				1D5712AF2CDB3159006850D4 /* Products */,
+				5A70675CE22EB1876BA4CB18 /* Pods */,
+				1574185C6201CA067EFC7493 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1D5712AF2CDB3159006850D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D5712AE2CDB3159006850D4 /* CheerUP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D5712B02CDB3159006850D4 /* CheerUP */ = {
+			isa = PBXGroup;
+			children = (
+				1D5712B12CDB3159006850D4 /* AppDelegate.swift */,
+				1D5712B32CDB3159006850D4 /* SceneDelegate.swift */,
+				1D5712B52CDB3159006850D4 /* WriteViewController.swift */,
+				1D5712CE2CDB6283006850D4 /* TextViewController.swift */,
+				1D5712D02CDE03F2006850D4 /* EditViewController.swift */,
+				1D5712CA2CDB551E006850D4 /* ReadTableViewCell.swift */,
+				1D5712CB2CDB551E006850D4 /* ReadTableViewCell.xib */,
+				1D5712B72CDB3159006850D4 /* Main.storyboard */,
+				1D5712BD2CDB315A006850D4 /* Assets.xcassets */,
+				1D5712BF2CDB315A006850D4 /* LaunchScreen.storyboard */,
+				1D5712C82CDB34B7006850D4 /* Cheer Up.png */,
+				1D5712C22CDB315A006850D4 /* Info.plist */,
+				1D5712BA2CDB3159006850D4 /* CheerUP.xcdatamodeld */,
+			);
+			path = CheerUP;
+			sourceTree = "<group>";
+		};
+		5A70675CE22EB1876BA4CB18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6465AA2DD768D32B85359A25 /* Pods-CheerUP.debug.xcconfig */,
+				964CB6E2CCD5CA8F3F11AEFC /* Pods-CheerUP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D5712AD2CDB3159006850D4 /* CheerUP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D5712C52CDB315A006850D4 /* Build configuration list for PBXNativeTarget "CheerUP" */;
+			buildPhases = (
+				E58826F72B9B835729610515 /* [CP] Check Pods Manifest.lock */,
+				1D5712AA2CDB3159006850D4 /* Sources */,
+				1D5712AB2CDB3159006850D4 /* Frameworks */,
+				1D5712AC2CDB3159006850D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CheerUP;
+			productName = CheerUP;
+			productReference = 1D5712AE2CDB3159006850D4 /* CheerUP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D5712A62CDB3159006850D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					1D5712AD2CDB3159006850D4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 1D5712A92CDB3159006850D4 /* Build configuration list for PBXProject "CheerUP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1D5712A52CDB3159006850D4;
+			productRefGroup = 1D5712AF2CDB3159006850D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D5712AD2CDB3159006850D4 /* CheerUP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D5712AC2CDB3159006850D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5712BE2CDB315A006850D4 /* Assets.xcassets in Resources */,
+				1D5712C12CDB315A006850D4 /* Base in Resources */,
+				1D5712CC2CDB551E006850D4 /* ReadTableViewCell.xib in Resources */,
+				1D5712B92CDB3159006850D4 /* Base in Resources */,
+				1D5712C92CDB34B7006850D4 /* Cheer Up.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E58826F72B9B835729610515 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheerUP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D5712AA2CDB3159006850D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5712BC2CDB3159006850D4 /* CheerUP.xcdatamodeld in Sources */,
+				1D5712B62CDB3159006850D4 /* WriteViewController.swift in Sources */,
+				1D5712B22CDB3159006850D4 /* AppDelegate.swift in Sources */,
+				1D5712CD2CDB551E006850D4 /* ReadTableViewCell.swift in Sources */,
+				1D5712B42CDB3159006850D4 /* SceneDelegate.swift in Sources */,
+				1D5712CF2CDB6283006850D4 /* TextViewController.swift in Sources */,
+				1D5712D12CDE03F2006850D4 /* EditViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1D5712B72CDB3159006850D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D5712B82CDB3159006850D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1D5712BF2CDB315A006850D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D5712C02CDB315A006850D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D5712C32CDB315A006850D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1D5712C42CDB315A006850D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1D5712C62CDB315A006850D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6465AA2DD768D32B85359A25 /* Pods-CheerUP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QKT5DG2WP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CheerUP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudang.CheerUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D5712C72CDB315A006850D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964CB6E2CCD5CA8F3F11AEFC /* Pods-CheerUP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QKT5DG2WP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CheerUP/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sudang.CheerUP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D5712A92CDB3159006850D4 /* Build configuration list for PBXProject "CheerUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5712C32CDB315A006850D4 /* Debug */,
+				1D5712C42CDB315A006850D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D5712C52CDB315A006850D4 /* Build configuration list for PBXNativeTarget "CheerUP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5712C62CDB315A006850D4 /* Debug */,
+				1D5712C72CDB315A006850D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D5712BA2CDB3159006850D4 /* CheerUP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D5712BB2CDB3159006850D4 /* CheerUP.xcdatamodel */,
+			);
+			currentVersion = 1D5712BB2CDB3159006850D4 /* CheerUP.xcdatamodel */;
+			path = CheerUP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1D5712A62CDB3159006850D4 /* Project object */;
+}
