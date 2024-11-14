@@ -15,10 +15,11 @@
 		1D5712BE2CDB315A006850D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712BD2CDB315A006850D4 /* Assets.xcassets */; };
 		1D5712C12CDB315A006850D4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712C02CDB315A006850D4 /* Base */; };
 		1D5712C92CDB34B7006850D4 /* Cheer Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712C82CDB34B7006850D4 /* Cheer Up.png */; };
-		1D5712CC2CDB551E006850D4 /* ReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712CB2CDB551E006850D4 /* ReadTableViewCell.xib */; };
-		1D5712CD2CDB551E006850D4 /* ReadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712CA2CDB551E006850D4 /* ReadTableViewCell.swift */; };
 		1D5712CF2CDB6283006850D4 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712CE2CDB6283006850D4 /* TextViewController.swift */; };
 		1D5712D12CDE03F2006850D4 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712D02CDE03F2006850D4 /* EditViewController.swift */; };
+		1D5712D32CE479FB006850D4 /* NotificationMassege.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712D22CE479FB006850D4 /* NotificationMassege.json */; };
+		1D8270332CE5EA4B00A2C3B6 /* ReadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8270312CE5EA4B00A2C3B6 /* ReadTableViewCell.swift */; };
+		1D8270342CE5EA4B00A2C3B6 /* ReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8270322CE5EA4B00A2C3B6 /* ReadTableViewCell.xib */; };
 		8B86653E6C0F8D88F8E60E8A /* Pods_CheerUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98831F21C97EAAA0D504C584 /* Pods_CheerUP.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,10 +34,11 @@
 		1D5712C02CDB315A006850D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D5712C22CDB315A006850D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D5712C82CDB34B7006850D4 /* Cheer Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cheer Up.png"; path = "../../Cheer Up.png"; sourceTree = "<group>"; };
-		1D5712CA2CDB551E006850D4 /* ReadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTableViewCell.swift; sourceTree = "<group>"; };
-		1D5712CB2CDB551E006850D4 /* ReadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadTableViewCell.xib; sourceTree = "<group>"; };
 		1D5712CE2CDB6283006850D4 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1D5712D02CDE03F2006850D4 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		1D5712D22CE479FB006850D4 /* NotificationMassege.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NotificationMassege.json; sourceTree = "<group>"; };
+		1D8270312CE5EA4B00A2C3B6 /* ReadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTableViewCell.swift; sourceTree = "<group>"; };
+		1D8270322CE5EA4B00A2C3B6 /* ReadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadTableViewCell.xib; sourceTree = "<group>"; };
 		6465AA2DD768D32B85359A25 /* Pods-CheerUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUP.debug.xcconfig"; path = "Target Support Files/Pods-CheerUP/Pods-CheerUP.debug.xcconfig"; sourceTree = "<group>"; };
 		964CB6E2CCD5CA8F3F11AEFC /* Pods-CheerUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUP.release.xcconfig"; path = "Target Support Files/Pods-CheerUP/Pods-CheerUP.release.xcconfig"; sourceTree = "<group>"; };
 		98831F21C97EAAA0D504C584 /* Pods_CheerUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheerUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,9 +90,10 @@
 				1D5712B52CDB3159006850D4 /* WriteViewController.swift */,
 				1D5712CE2CDB6283006850D4 /* TextViewController.swift */,
 				1D5712D02CDE03F2006850D4 /* EditViewController.swift */,
-				1D5712CA2CDB551E006850D4 /* ReadTableViewCell.swift */,
-				1D5712CB2CDB551E006850D4 /* ReadTableViewCell.xib */,
+				1D8270312CE5EA4B00A2C3B6 /* ReadTableViewCell.swift */,
+				1D8270322CE5EA4B00A2C3B6 /* ReadTableViewCell.xib */,
 				1D5712B72CDB3159006850D4 /* Main.storyboard */,
+				1D5712D22CE479FB006850D4 /* NotificationMassege.json */,
 				1D5712BD2CDB315A006850D4 /* Assets.xcassets */,
 				1D5712BF2CDB315A006850D4 /* LaunchScreen.storyboard */,
 				1D5712C82CDB34B7006850D4 /* Cheer Up.png */,
@@ -170,9 +173,10 @@
 			files = (
 				1D5712BE2CDB315A006850D4 /* Assets.xcassets in Resources */,
 				1D5712C12CDB315A006850D4 /* Base in Resources */,
-				1D5712CC2CDB551E006850D4 /* ReadTableViewCell.xib in Resources */,
+				1D5712D32CE479FB006850D4 /* NotificationMassege.json in Resources */,
 				1D5712B92CDB3159006850D4 /* Base in Resources */,
 				1D5712C92CDB34B7006850D4 /* Cheer Up.png in Resources */,
+				1D8270342CE5EA4B00A2C3B6 /* ReadTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,8 +215,8 @@
 				1D5712BC2CDB3159006850D4 /* CheerUP.xcdatamodeld in Sources */,
 				1D5712B62CDB3159006850D4 /* WriteViewController.swift in Sources */,
 				1D5712B22CDB3159006850D4 /* AppDelegate.swift in Sources */,
-				1D5712CD2CDB551E006850D4 /* ReadTableViewCell.swift in Sources */,
 				1D5712B42CDB3159006850D4 /* SceneDelegate.swift in Sources */,
+				1D8270332CE5EA4B00A2C3B6 /* ReadTableViewCell.swift in Sources */,
 				1D5712CF2CDB6283006850D4 /* TextViewController.swift in Sources */,
 				1D5712D12CDE03F2006850D4 /* EditViewController.swift in Sources */,
 			);

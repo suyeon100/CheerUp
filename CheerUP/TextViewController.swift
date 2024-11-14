@@ -31,7 +31,6 @@ class TextViewController: UIViewController {
     @IBAction func dismissAddBtn(_ sender: Any) {
         if let text = textWtite.text, !text.isEmpty {
                    delegate?.didAddNote(text)
-          
                    dismiss(animated: true, completion: nil)
                }
         

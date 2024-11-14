@@ -15,7 +15,8 @@
 // 테이블 뷰에 데이터 보여주기✔️
 // 동적으로 셀 높이 조절하기 ✔️
 // 테이블 뷰 클릭시 해당 일기 보여주기
-// 테이블 뷰 삭제기능
+// 테이블 뷰 삭제기능 ✔️
+
 
  
 import UIKit
@@ -25,6 +26,7 @@ class WriteViewController: UIViewController, DiaryInputDelegate{
     
     var notes: [String] = []
     @IBOutlet weak var tableView: UITableView!
+    var instance: EditViewController?
  
 
     override func viewDidLoad() {
@@ -35,8 +37,6 @@ class WriteViewController: UIViewController, DiaryInputDelegate{
         
         loadNotesFromUserDefaults()
     }
-    
-    
 
     
     @IBAction func writeBtn(_ sender: Any) {
@@ -51,8 +51,9 @@ class WriteViewController: UIViewController, DiaryInputDelegate{
   
     
     func didAddNote(_ note: String) {
-          notes.append(note)
-          tableView.reloadData()
+        //  notes.append(note)
+        notes.insert(note, at: 0) // 일기 최신순으로 이동
+        tableView.reloadData()
         saveNotesToUserDefaults()
     }
     
@@ -89,14 +90,27 @@ extension WriteViewController: UITableViewDataSource, UITableViewDelegate{
         // DetailViewController 호출
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let detailVC = storyboard.instantiateViewController(identifier: "Edit") as? EditViewController {
-           // detailVC.noteText = selectedNote  // 선택된 메모 전달
+         
+            detailVC.selectedText = selectedNote
             present(detailVC, animated: true, completion: nil)
         }
-        
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+          if editingStyle == .delete {
+              // 데이터 소스에서 항목 삭제
+              notes.remove(at: indexPath.row)
+              // 테이블뷰에서 셀 삭제
+              tableView.deleteRows(at: [indexPath], with: .fade)
+             
+              // 테이블뷰를 지우고 난 후 데이터 수정
+              saveNotesToUserDefaults()
+              
+          }
+      }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 
+        UITableView.automaticDimension
     }
 }
