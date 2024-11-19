@@ -17,7 +17,7 @@ struct Messages: Decodable {
 }
 
 func loadMessages() -> [Message]? {
-    guard let url = Bundle.main.url(forResource: "messages", withExtension: "json") else {
+    guard let url = Bundle.main.url(forResource: "NotificationMassege", withExtension: "json") else {
         print("JSON 파일을 찾을 수 없습니다.")
         return nil
     }
@@ -30,4 +30,14 @@ func loadMessages() -> [Message]? {
         print("JSON 파싱 에러: \(error)")
         return nil
     }
+}
+func getMessageForToday(startDate: Date, messages: [Message]) -> String? {
+    let calendar = Calendar.current
+    let today = Date()
+    guard let daysPassed = calendar.dateComponents([.day], from: startDate, to: today).day else {
+        return nil
+    }
+
+    let currentDay = daysPassed + 1 // 1일부터 시작
+    return messages.first { $0.day == currentDay }?.message
 }

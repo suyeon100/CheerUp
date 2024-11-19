@@ -25,12 +25,16 @@ class WriteViewController: UIViewController, DiaryInputDelegate{
     
     
     var notes: [String] = []
+    var alertTexts: [String] = []
     @IBOutlet weak var tableView: UITableView!
     var instance: EditViewController?
+    
+    
  
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       
         tableView.register(UINib(nibName: "ReadTableViewCell", bundle: nil), forCellReuseIdentifier: "ReadTableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
@@ -38,8 +42,61 @@ class WriteViewController: UIViewController, DiaryInputDelegate{
         loadNotesFromUserDefaults()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // init -> loadView -> viewDidLoad -> viewWillAppear -> viewDidAppear -> viewWillDisappear -> viewDidDisappear -> viewDidUnload
+        
+        // 앱이 켜지자마자 custom alert view를 보여주려면 viewDidLoad가 아닌, 뷰 컨트롤러가 화면에 표시된 후에 알림을 띄워야 합니다.
+        // viewDidLoad는 뷰 계층이 아직 화면에 표시되기 전에 호출되기 때문에 알림을 표시하려는 코드가 무시될 수 있습니다. 이를 해결하려면 **viewDidAppear**를 사용하면 됩니다.
+
+//        if shouldShowAlertToday() {
+//                customAlert()
+//                saveAlertDate()
+//            }
+        
+        customAlert()
+        
+    }
+    
+    func shouldShowAlertToday() -> Bool {
+        let defaults = UserDefaults.standard
+        
+        // 저장된 마지막 알림 날짜 가져오기
+        if let lastAlertDate = defaults.object(forKey: "lastAlertDate") as? Date {
+            let calendar = Calendar.current
+            print("last ==== \(lastAlertDate)")
+            
+            // 오늘 날짜와 마지막 알림 날짜 비교
+            return !calendar.isDateInToday(lastAlertDate)
+        }
+        
+        // 저장된 날짜가 없으면 첫 실행이므로 알림 표시
+        return true
+    }
+
+    func saveAlertDate() {
+        let defaults = UserDefaults.standard
+        defaults.set(Date(), forKey: "lastAlertDate") // 현재 날짜 저장
+    }
+
+
+    func customAlert(){
+        let customAlertStoryboard = UIStoryboard(name: "CustomAlertViewController", bundle: nil)
+              if let customAlertViewController = customAlertStoryboard.instantiateViewController(withIdentifier: "CustomAlertViewController") as? CustomAlertViewController{
+
+                  customAlertViewController.modalPresentationStyle = .overFullScreen
+                  customAlertViewController.modalTransitionStyle = .crossDissolve
+//                  customAlertViewController.todayText.text = ""
+                  customAlertViewController.delegate = self
+                  present(customAlertViewController, animated: true, completion: nil)
+              }
+    
+    }
+    
     
     @IBAction func writeBtn(_ sender: Any) {
+        
 //        guard let nextVC = self.storyboard?.instantiateViewController(identifier: "TextView") else { return }
 //        self.present(nextVC, animated: true, completion: nil)
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -47,6 +104,7 @@ class WriteViewController: UIViewController, DiaryInputDelegate{
                  noteInputVC.delegate = self
                  present(noteInputVC, animated: true, completion: nil)
              }
+        
     }
   
     
@@ -110,7 +168,22 @@ extension WriteViewController: UITableViewDataSource, UITableViewDelegate{
           }
       }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 
-        UITableView.automaticDimension
+        return 100
+//        UITableView.automaticDimension
+    }
+}
+extension WriteViewController: CustomAlertDelegate {
+    func alertText(_ text: String) {
+        
+        alertTexts.insert(text, at: 0)
+       // tableView.reloadData()
+    }
+    
+    func action() {
+        // 확인 버튼 이벤트 처리
+            }
+    
+    func exit() {
+        // 취소 버튼 이벤트 처리
     }
 }

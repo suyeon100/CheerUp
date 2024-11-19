@@ -1,24 +1,17 @@
 //
-//  ReadTableViewCell.swift
+//  CheerUpTVCell.swift
 //  CheerUP
 //
-//  Created by 박수연 on 11/14/24.
+//  Created by 박수연 on 11/27/24.
 //
 
 import UIKit
 
-class ReadTableViewCell: UITableViewCell {
-    
-    
-    
-    
-    @IBOutlet weak var diary: UILabel!
-    
+class CheerUpTVCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

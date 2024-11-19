@@ -4,37 +4,38 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Custom Alert View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="CustomAlertViewController" customModule="CheerUP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomAlertViewController" id="Y6W-OH-hqX" customClass="CustomAlertViewController" customModule="CheerUP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1u0-yy-1hM">
-                                <rect key="frame" x="43" y="338" width="303" height="155"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1u0-yy-1hM">
+                                <rect key="frame" x="43" y="338" width="307" height="155"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="오늘의 나에게💌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdS-v1-Yfk">
-                                        <rect key="frame" x="85" y="10" width="133.33333333333331" height="14.333333333333336"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 나에게💌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdS-v1-Yfk">
+                                        <rect key="frame" x="85" y="10" width="137" height="14.333333333333336"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="오늘도 수고많았어요 :)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TmN-PZ-zck">
-                                        <rect key="frame" x="18" y="50.333333333333343" width="267" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="오늘도 수고많았어요 :)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TmN-PZ-zck">
+                                        <rect key="frame" x="18" y="50.333333333333314" width="271" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL9-y1-6I7">
-                                        <rect key="frame" x="154" y="120" width="149" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL9-y1-6I7">
+                                        <rect key="frame" x="153.66666666666663" y="120" width="153.33333333333337" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.92518584145407801" blue="0.52794595014410883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="g6T-wo-LOv"/>
+                                            <constraint firstAttribute="width" constant="153.5" id="mh9-hn-3bV"/>
+                                        </constraints>
                                         <color key="tintColor" systemColor="tableCellGroupedBackgroundColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="다음에"/>
@@ -42,10 +43,13 @@
                                             <action selector="cancelButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ja7-ph-Shn"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-oC-yGU">
-                                        <rect key="frame" x="0.0" y="120" width="154" height="34.999999999999986"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.81176471709999998" green="0.65098041299999998" blue="0.60784316059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbJ-oC-yGU">
+                                        <rect key="frame" x="0.0" y="120" width="153.66666666666666" height="35"/>
+                                        <color key="backgroundColor" red="1" green="0.83805547544019832" blue="0.96812946166856972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="153.5" id="27I-d4-qbb"/>
+                                            <constraint firstAttribute="height" constant="35" id="5gp-bs-hcR"/>
+                                        </constraints>
                                         <color key="tintColor" systemColor="tableCellGroupedBackgroundColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="나에게 전달"/>
@@ -54,14 +58,29 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="1" green="0.97546736497629338" blue="0.80595747436457976" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="TmN-PZ-zck" firstAttribute="top" secondItem="NdS-v1-Yfk" secondAttribute="bottom" constant="26" id="82f-Ka-lfU"/>
+                                    <constraint firstItem="NdS-v1-Yfk" firstAttribute="leading" secondItem="1u0-yy-1hM" secondAttribute="leading" constant="85" id="DCU-WQ-qb2"/>
+                                    <constraint firstItem="wbJ-oC-yGU" firstAttribute="leading" secondItem="1u0-yy-1hM" secondAttribute="leading" id="Mog-dF-ItA"/>
                                     <constraint firstItem="NdS-v1-Yfk" firstAttribute="top" secondItem="1u0-yy-1hM" secondAttribute="top" constant="10" id="Pyl-G9-sSK"/>
+                                    <constraint firstAttribute="trailing" secondItem="wL9-y1-6I7" secondAttribute="trailing" id="XdH-Tf-Uf3"/>
+                                    <constraint firstAttribute="trailing" secondItem="NdS-v1-Yfk" secondAttribute="trailing" constant="85" id="cpC-sx-9zM"/>
+                                    <constraint firstItem="TmN-PZ-zck" firstAttribute="leading" secondItem="1u0-yy-1hM" secondAttribute="leading" constant="18" id="fIh-OL-O7O"/>
+                                    <constraint firstAttribute="bottom" secondItem="wbJ-oC-yGU" secondAttribute="bottom" id="heY-rC-pPn"/>
+                                    <constraint firstAttribute="bottom" secondItem="wL9-y1-6I7" secondAttribute="bottom" id="x2q-rp-9ea"/>
+                                    <constraint firstAttribute="trailing" secondItem="TmN-PZ-zck" secondAttribute="trailing" constant="18" id="yJM-oz-q12"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="1u0-yy-1hM" secondAttribute="bottom" constant="325" id="DGd-9D-cg6"/>
+                            <constraint firstItem="1u0-yy-1hM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="279" id="OtF-KL-eGL"/>
+                            <constraint firstItem="1u0-yy-1hM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="43" id="iBa-uI-hNL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1u0-yy-1hM" secondAttribute="trailing" constant="43" id="sNv-wk-PkK"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="alertView" destination="1u0-yy-1hM" id="HGd-cJ-G85"/>
@@ -77,12 +96,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="tableCellGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

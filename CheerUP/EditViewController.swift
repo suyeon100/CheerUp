@@ -24,7 +24,7 @@ class EditViewController: UIViewController {
       
             
             selectView.text = selectedText
-              
+      
 
     }
 

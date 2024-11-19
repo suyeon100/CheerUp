@@ -14,12 +14,19 @@
 		1D5712BC2CDB3159006850D4 /* CheerUP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712BA2CDB3159006850D4 /* CheerUP.xcdatamodeld */; };
 		1D5712BE2CDB315A006850D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712BD2CDB315A006850D4 /* Assets.xcassets */; };
 		1D5712C12CDB315A006850D4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712C02CDB315A006850D4 /* Base */; };
-		1D5712C92CDB34B7006850D4 /* Cheer Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712C82CDB34B7006850D4 /* Cheer Up.png */; };
 		1D5712CF2CDB6283006850D4 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712CE2CDB6283006850D4 /* TextViewController.swift */; };
 		1D5712D12CDE03F2006850D4 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5712D02CDE03F2006850D4 /* EditViewController.swift */; };
 		1D5712D32CE479FB006850D4 /* NotificationMassege.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D5712D22CE479FB006850D4 /* NotificationMassege.json */; };
+		1D72AF372CE628F300DFCF51 /* CheerUp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D72AF352CE628F300DFCF51 /* CheerUp3.png */; };
+		1D72AF382CE628F300DFCF51 /* CheerUp2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D72AF362CE628F300DFCF51 /* CheerUp2.png */; };
+		1D72AF3A2CEB0A3100DFCF51 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D72AF392CEB0A3100DFCF51 /* Message.swift */; };
+		1D72AF3C2CEB19F100DFCF51 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D72AF3B2CEB19F100DFCF51 /* Login.storyboard */; };
+		1D72AF3E2CEB1AD500DFCF51 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D72AF3D2CEB1AD500DFCF51 /* LoginVC.swift */; };
+		1D72AF672CEB3A1F00DFCF51 /* CustomAlertViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D72AF662CEB3A1F00DFCF51 /* CustomAlertViewController.storyboard */; };
+		1D72AF6C2CEB400900DFCF51 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D72AF6B2CEB400900DFCF51 /* CustomAlertViewController.swift */; };
 		1D8270332CE5EA4B00A2C3B6 /* ReadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8270312CE5EA4B00A2C3B6 /* ReadTableViewCell.swift */; };
 		1D8270342CE5EA4B00A2C3B6 /* ReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8270322CE5EA4B00A2C3B6 /* ReadTableViewCell.xib */; };
+		1D8270362CE6227500A2C3B6 /* Cheer Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D8270352CE6227500A2C3B6 /* Cheer Up.png */; };
 		8B86653E6C0F8D88F8E60E8A /* Pods_CheerUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98831F21C97EAAA0D504C584 /* Pods_CheerUP.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,12 +40,22 @@
 		1D5712BD2CDB315A006850D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D5712C02CDB315A006850D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D5712C22CDB315A006850D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1D5712C82CDB34B7006850D4 /* Cheer Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cheer Up.png"; path = "../../Cheer Up.png"; sourceTree = "<group>"; };
 		1D5712CE2CDB6283006850D4 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		1D5712D02CDE03F2006850D4 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		1D5712D22CE479FB006850D4 /* NotificationMassege.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = NotificationMassege.json; sourceTree = "<group>"; };
+		1D72AF352CE628F300DFCF51 /* CheerUp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheerUp3.png; path = ../../../Downloads/CheerUp3.png; sourceTree = "<group>"; };
+		1D72AF362CE628F300DFCF51 /* CheerUp2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CheerUp2.png; path = ../../../Downloads/CheerUp2.png; sourceTree = "<group>"; };
+		1D72AF392CEB0A3100DFCF51 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1D72AF3B2CEB19F100DFCF51 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		1D72AF3D2CEB1AD500DFCF51 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		1D72AF662CEB3A1F00DFCF51 /* CustomAlertViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomAlertViewController.storyboard; sourceTree = "<group>"; };
+		1D72AF6B2CEB400900DFCF51 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		1D72AF6D2CEB489500DFCF51 /* 나눔손글씨성실체.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "나눔손글씨성실체.ttf"; sourceTree = "<group>"; };
+		1D72AF6E2CEB508200DFCF51 /* 나눔손글씨 시우 귀여워.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "나눔손글씨 시우 귀여워.ttf"; path = "../../clova-all/시우_귀여워/나눔손글씨 시우 귀여워.ttf"; sourceTree = "<group>"; };
+		1D72AF6F2CEB508700DFCF51 /* 나눔손글씨 시우 귀여워.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "나눔손글씨 시우 귀여워.ttf"; sourceTree = "<group>"; };
 		1D8270312CE5EA4B00A2C3B6 /* ReadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTableViewCell.swift; sourceTree = "<group>"; };
 		1D8270322CE5EA4B00A2C3B6 /* ReadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadTableViewCell.xib; sourceTree = "<group>"; };
+		1D8270352CE6227500A2C3B6 /* Cheer Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cheer Up.png"; path = "../../../Downloads/Cheer Up.png"; sourceTree = "<group>"; };
 		6465AA2DD768D32B85359A25 /* Pods-CheerUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUP.debug.xcconfig"; path = "Target Support Files/Pods-CheerUP/Pods-CheerUP.debug.xcconfig"; sourceTree = "<group>"; };
 		964CB6E2CCD5CA8F3F11AEFC /* Pods-CheerUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUP.release.xcconfig"; path = "Target Support Files/Pods-CheerUP/Pods-CheerUP.release.xcconfig"; sourceTree = "<group>"; };
 		98831F21C97EAAA0D504C584 /* Pods_CheerUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheerUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,20 +104,38 @@
 			children = (
 				1D5712B12CDB3159006850D4 /* AppDelegate.swift */,
 				1D5712B32CDB3159006850D4 /* SceneDelegate.swift */,
+				1D72AF3D2CEB1AD500DFCF51 /* LoginVC.swift */,
 				1D5712B52CDB3159006850D4 /* WriteViewController.swift */,
 				1D5712CE2CDB6283006850D4 /* TextViewController.swift */,
 				1D5712D02CDE03F2006850D4 /* EditViewController.swift */,
 				1D8270312CE5EA4B00A2C3B6 /* ReadTableViewCell.swift */,
 				1D8270322CE5EA4B00A2C3B6 /* ReadTableViewCell.xib */,
+				1D72AF6B2CEB400900DFCF51 /* CustomAlertViewController.swift */,
+				1D72AF662CEB3A1F00DFCF51 /* CustomAlertViewController.storyboard */,
 				1D5712B72CDB3159006850D4 /* Main.storyboard */,
 				1D5712D22CE479FB006850D4 /* NotificationMassege.json */,
+				1D72AF392CEB0A3100DFCF51 /* Message.swift */,
+				1D72AF6E2CEB508200DFCF51 /* 나눔손글씨 시우 귀여워.ttf */,
+				1D72AF692CEB3CAD00DFCF51 /* Font */,
 				1D5712BD2CDB315A006850D4 /* Assets.xcassets */,
 				1D5712BF2CDB315A006850D4 /* LaunchScreen.storyboard */,
-				1D5712C82CDB34B7006850D4 /* Cheer Up.png */,
+				1D72AF3B2CEB19F100DFCF51 /* Login.storyboard */,
+				1D8270352CE6227500A2C3B6 /* Cheer Up.png */,
+				1D72AF362CE628F300DFCF51 /* CheerUp2.png */,
+				1D72AF352CE628F300DFCF51 /* CheerUp3.png */,
 				1D5712C22CDB315A006850D4 /* Info.plist */,
 				1D5712BA2CDB3159006850D4 /* CheerUP.xcdatamodeld */,
 			);
 			path = CheerUP;
+			sourceTree = "<group>";
+		};
+		1D72AF692CEB3CAD00DFCF51 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				1D72AF6D2CEB489500DFCF51 /* 나눔손글씨성실체.ttf */,
+				1D72AF6F2CEB508700DFCF51 /* 나눔손글씨 시우 귀여워.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		5A70675CE22EB1876BA4CB18 /* Pods */ = {
@@ -171,12 +206,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D72AF372CE628F300DFCF51 /* CheerUp3.png in Resources */,
 				1D5712BE2CDB315A006850D4 /* Assets.xcassets in Resources */,
+				1D8270362CE6227500A2C3B6 /* Cheer Up.png in Resources */,
 				1D5712C12CDB315A006850D4 /* Base in Resources */,
 				1D5712D32CE479FB006850D4 /* NotificationMassege.json in Resources */,
+				1D72AF382CE628F300DFCF51 /* CheerUp2.png in Resources */,
+				1D72AF672CEB3A1F00DFCF51 /* CustomAlertViewController.storyboard in Resources */,
 				1D5712B92CDB3159006850D4 /* Base in Resources */,
-				1D5712C92CDB34B7006850D4 /* Cheer Up.png in Resources */,
 				1D8270342CE5EA4B00A2C3B6 /* ReadTableViewCell.xib in Resources */,
+				1D72AF3C2CEB19F100DFCF51 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +253,11 @@
 			files = (
 				1D5712BC2CDB3159006850D4 /* CheerUP.xcdatamodeld in Sources */,
 				1D5712B62CDB3159006850D4 /* WriteViewController.swift in Sources */,
+				1D72AF3E2CEB1AD500DFCF51 /* LoginVC.swift in Sources */,
 				1D5712B22CDB3159006850D4 /* AppDelegate.swift in Sources */,
 				1D5712B42CDB3159006850D4 /* SceneDelegate.swift in Sources */,
+				1D72AF3A2CEB0A3100DFCF51 /* Message.swift in Sources */,
+				1D72AF6C2CEB400900DFCF51 /* CustomAlertViewController.swift in Sources */,
 				1D8270332CE5EA4B00A2C3B6 /* ReadTableViewCell.swift in Sources */,
 				1D5712CF2CDB6283006850D4 /* TextViewController.swift in Sources */,
 				1D5712D12CDE03F2006850D4 /* EditViewController.swift in Sources */,

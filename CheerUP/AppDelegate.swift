@@ -21,14 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-    func scheduleDailyNotification() {
+    func scheduleDailyNotification(message: String, hour: Int, minute: Int) {
         var dateComponents = DateComponents()
-        dateComponents.hour = 17  // 오전 8시
-        dateComponents.minute = 2
+        dateComponents.hour = hour  // 오전 8시
+        dateComponents.minute = minute
 
         let content = UNMutableNotificationContent()
         content.title = "오늘의 메시지"
-        content.body = "오늘도 수고했어 !"
+        content.body =  message
         content.sound = .default
 
         // 매일 특정 시간에 알림을 보내기 위한 트리거 설정
@@ -43,14 +43,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    func setupNotifications() {
+        guard let messages = loadMessages() else { return }
 
+        let startDate = UserDefaults.standard.object(forKey: "startDate") as? Date ?? Date()
+        UserDefaults.standard.set(startDate, forKey: "startDate")
+
+        if let message = getMessageForToday(startDate: startDate, messages: messages) {
+            scheduleDailyNotification(message: message, hour: 17, minute: 0) // 9시 알림
+            print("오늘의 메세지 == \(message)")
+        }
+    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         sleep(1)
         
         
         requestNotificationPermission()
-        scheduleDailyNotification()
+        setupNotifications()
         return true
     }
 

@@ -1,11 +1,6 @@
-//
-//  NotificationMassege.json
-//  CheerUP
-//
-//  Created by 박수연 on 11/13/24.
-//
 
-[
+{
+"messages": [
     {"day": 1, "message": "오늘 하루는 어땠나요?"},
     {"day": 2, "message": "오늘을 기록하세요."},
     {"day": 3, "message": "성공은 작은 노력의 반복입니다."},
@@ -37,3 +32,4 @@
     {"day": 29, "message": "밥 먹자"},
     {"day": 30, "message": "당신은 정말 대견하고 자랑스러워요."}
 ]
+}
