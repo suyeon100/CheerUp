@@ -25,8 +25,6 @@ class TextViewController: UIViewController {
         textWtite.text = ""
         desien()
       
-        
-     
     }
     
     func desien(){

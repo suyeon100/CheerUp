@@ -12,10 +12,13 @@ protocol CustomAlertDelegate: AnyObject {
     func alertText(_ text: String)
 }
 
+
 enum AlertType {
     case onlyConfirm    // 나에게 전달
     case canCancel      // 확인 + 취소 버튼
 }
+
+
 class CustomAlertViewController: UIViewController {
     
     var delegate: CustomAlertDelegate?

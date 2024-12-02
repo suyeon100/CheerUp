@@ -9,12 +9,10 @@ import UIKit
 
 class ReadTableViewCell: UITableViewCell {
     
-    
-    
-    
     @IBOutlet weak var diary: UILabel!
     
-
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

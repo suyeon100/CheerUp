@@ -1,13 +1,13 @@
 //
-//  CheerUpViewController.swift
+//  PhotoGalleryVC.swift
 //  CheerUP
 //
-//  Created by 박수연 on 11/19/24.
+//  Created by 박수연 on 12/2/24.
 //
 
 import UIKit
 
-class CheerUpViewController: UIViewController {
+class PhotoGalleryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
