@@ -8,6 +8,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--🍀-->
+        <scene sceneID="fRE-tg-l5B">
+            <objects>
+                <viewController id="o8h-F9-jBu" customClass="PhotoGalleryVC" customModule="CheerUP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c0h-7B-nQy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xof-d3-gk8"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="🍀" id="DU3-oV-Iao"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hnI-1P-xWL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515.2671755725191" y="53.521126760563384"/>
+        </scene>
         <!--Write View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -68,7 +84,7 @@
                             <constraint firstItem="0MD-Ud-lPJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xuy-Wi-YU2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="heart" catalog="system" id="oob-ya-JIE"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart.circle.fill" catalog="system" id="oob-ya-JIE"/>
                     <navigationItem key="navigationItem" id="Enw-83-n5T"/>
                     <connections>
                         <outlet property="tableView" destination="xBl-3V-Nad" id="6L8-l3-ikJ"/>
@@ -76,23 +92,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="501"/>
+            <point key="canvasLocation" x="1511" y="-658"/>
         </scene>
-        <!--View Controller-->
+        <!--Cheer Up View Controller-->
         <scene sceneID="635-gd-HbY">
             <objects>
-                <viewController id="dSX-W2-rVC" sceneMemberID="viewController">
+                <viewController id="dSX-W2-rVC" customClass="CheerUpViewController" customModule="CheerUP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GVP-Vw-9jp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="3GH-ve-aVd"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.78823530669999997" green="0.61176472900000001" blue="0.71764707569999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="sun.min.fill" catalog="system" id="2Mh-jh-76N"/>
+                    <tabBarItem key="tabBarItem" title="" image="heart.circle" catalog="system" id="2Mh-jh-76N"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ik3-3I-G8L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="-211"/>
+            <point key="canvasLocation" x="1511" y="-1373"/>
         </scene>
         <!--Text View Controller-->
         <scene sceneID="Plf-oU-6FW">
@@ -173,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSb-eb-cqH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1776" y="501"/>
+            <point key="canvasLocation" x="2360" y="-658"/>
         </scene>
         <!--Edit View Controller-->
         <scene sceneID="ngs-9A-wQB">
@@ -246,37 +262,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EuN-Fx-UX3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2581" y="502"/>
+            <point key="canvasLocation" x="3363" y="-658"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eja-Tq-abN">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="qoJ-tY-Ynd" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="sun.max" catalog="system" id="vF1-0c-q1M">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vF1-0c-q1M">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="1" green="0.83805547540000003" blue="0.96812946170000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="dSX-W2-rVC" kind="relationship" relationship="viewControllers" id="Yae-MZ-oga"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Dbr-qj-lMb"/>
+                        <segue destination="O8n-YP-4G6" kind="relationship" relationship="viewControllers" id="XoM-hY-QDN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3NN-7q-qJI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="-883" y="-499"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X53-RM-hpZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O8n-YP-4G6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="heart.circle" catalog="system" id="XCP-ot-13g"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="dh7-Xs-baW">
+                        <rect key="frame" x="0.0" y="59" width="393" height="104.33333333333334"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.86274516580000005" green="0.99607843159999998" blue="0.78823530669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="o8h-F9-jBu" kind="relationship" relationship="rootViewController" id="mpX-Ad-5y8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TN8-mw-XK4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588.5496183206105" y="53.521126760563384"/>
         </scene>
     </scenes>
     <resources>
         <image name="2" width="500" height="500"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
-        <image name="heart" catalog="system" width="128" height="107"/>
-        <image name="sun.max" catalog="system" width="128" height="125"/>
-        <image name="sun.min.fill" catalog="system" width="128" height="123"/>
+        <image name="heart.circle" catalog="system" width="128" height="123"/>
+        <image name="heart.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

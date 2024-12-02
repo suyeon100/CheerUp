@@ -27,6 +27,12 @@
 		1D8270332CE5EA4B00A2C3B6 /* ReadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8270312CE5EA4B00A2C3B6 /* ReadTableViewCell.swift */; };
 		1D8270342CE5EA4B00A2C3B6 /* ReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8270322CE5EA4B00A2C3B6 /* ReadTableViewCell.xib */; };
 		1D8270362CE6227500A2C3B6 /* Cheer Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D8270352CE6227500A2C3B6 /* Cheer Up.png */; };
+		1D8F6C762CFD959000A80E90 /* PhotoGalleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8F6C752CFD959000A80E90 /* PhotoGalleryVC.swift */; };
+		1D8F6C792CFD968A00A80E90 /* PhotoCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D8F6C782CFD968A00A80E90 /* PhotoCVCell.xib */; };
+		1D8F6C7A2CFD968A00A80E90 /* PhotoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8F6C772CFD968A00A80E90 /* PhotoCVCell.swift */; };
+		1D9CE72F2CEC9C5E0005349E /* CheerUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CE72E2CEC9C5E0005349E /* CheerUpViewController.swift */; };
+		1D9CE7322CF6FD040005349E /* CheerUpTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9CE7302CF6FD040005349E /* CheerUpTVCell.swift */; };
+		1D9CE7332CF6FD040005349E /* CheerUpTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D9CE7312CF6FD040005349E /* CheerUpTVCell.xib */; };
 		8B86653E6C0F8D88F8E60E8A /* Pods_CheerUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98831F21C97EAAA0D504C584 /* Pods_CheerUP.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +62,12 @@
 		1D8270312CE5EA4B00A2C3B6 /* ReadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadTableViewCell.swift; sourceTree = "<group>"; };
 		1D8270322CE5EA4B00A2C3B6 /* ReadTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReadTableViewCell.xib; sourceTree = "<group>"; };
 		1D8270352CE6227500A2C3B6 /* Cheer Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cheer Up.png"; path = "../../../Downloads/Cheer Up.png"; sourceTree = "<group>"; };
+		1D8F6C752CFD959000A80E90 /* PhotoGalleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryVC.swift; sourceTree = "<group>"; };
+		1D8F6C772CFD968A00A80E90 /* PhotoCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCVCell.swift; sourceTree = "<group>"; };
+		1D8F6C782CFD968A00A80E90 /* PhotoCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCVCell.xib; sourceTree = "<group>"; };
+		1D9CE72E2CEC9C5E0005349E /* CheerUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerUpViewController.swift; sourceTree = "<group>"; };
+		1D9CE7302CF6FD040005349E /* CheerUpTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheerUpTVCell.swift; sourceTree = "<group>"; };
+		1D9CE7312CF6FD040005349E /* CheerUpTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheerUpTVCell.xib; sourceTree = "<group>"; };
 		6465AA2DD768D32B85359A25 /* Pods-CheerUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUP.debug.xcconfig"; path = "Target Support Files/Pods-CheerUP/Pods-CheerUP.debug.xcconfig"; sourceTree = "<group>"; };
 		964CB6E2CCD5CA8F3F11AEFC /* Pods-CheerUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheerUP.release.xcconfig"; path = "Target Support Files/Pods-CheerUP/Pods-CheerUP.release.xcconfig"; sourceTree = "<group>"; };
 		98831F21C97EAAA0D504C584 /* Pods_CheerUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheerUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,13 +117,9 @@
 				1D5712B12CDB3159006850D4 /* AppDelegate.swift */,
 				1D5712B32CDB3159006850D4 /* SceneDelegate.swift */,
 				1D72AF3D2CEB1AD500DFCF51 /* LoginVC.swift */,
-				1D5712B52CDB3159006850D4 /* WriteViewController.swift */,
-				1D5712CE2CDB6283006850D4 /* TextViewController.swift */,
-				1D5712D02CDE03F2006850D4 /* EditViewController.swift */,
-				1D8270312CE5EA4B00A2C3B6 /* ReadTableViewCell.swift */,
-				1D8270322CE5EA4B00A2C3B6 /* ReadTableViewCell.xib */,
-				1D72AF6B2CEB400900DFCF51 /* CustomAlertViewController.swift */,
-				1D72AF662CEB3A1F00DFCF51 /* CustomAlertViewController.storyboard */,
+				1D8F6C722CFD93DB00A80E90 /* FirstTabBar */,
+				1D8F6C732CFD940000A80E90 /* TwoDiaryTabBar */,
+				1D8F6C742CFD94CA00A80E90 /* ThreePhotoTabBar */,
 				1D5712B72CDB3159006850D4 /* Main.storyboard */,
 				1D5712D22CE479FB006850D4 /* NotificationMassege.json */,
 				1D72AF392CEB0A3100DFCF51 /* Message.swift */,
@@ -136,6 +144,40 @@
 				1D72AF6F2CEB508700DFCF51 /* 나눔손글씨 시우 귀여워.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		1D8F6C722CFD93DB00A80E90 /* FirstTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1D9CE72E2CEC9C5E0005349E /* CheerUpViewController.swift */,
+				1D72AF6B2CEB400900DFCF51 /* CustomAlertViewController.swift */,
+				1D72AF662CEB3A1F00DFCF51 /* CustomAlertViewController.storyboard */,
+				1D9CE7302CF6FD040005349E /* CheerUpTVCell.swift */,
+				1D9CE7312CF6FD040005349E /* CheerUpTVCell.xib */,
+			);
+			path = FirstTabBar;
+			sourceTree = "<group>";
+		};
+		1D8F6C732CFD940000A80E90 /* TwoDiaryTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1D5712B52CDB3159006850D4 /* WriteViewController.swift */,
+				1D5712CE2CDB6283006850D4 /* TextViewController.swift */,
+				1D5712D02CDE03F2006850D4 /* EditViewController.swift */,
+				1D8270312CE5EA4B00A2C3B6 /* ReadTableViewCell.swift */,
+				1D8270322CE5EA4B00A2C3B6 /* ReadTableViewCell.xib */,
+			);
+			path = TwoDiaryTabBar;
+			sourceTree = "<group>";
+		};
+		1D8F6C742CFD94CA00A80E90 /* ThreePhotoTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1D8F6C752CFD959000A80E90 /* PhotoGalleryVC.swift */,
+				1D8F6C772CFD968A00A80E90 /* PhotoCVCell.swift */,
+				1D8F6C782CFD968A00A80E90 /* PhotoCVCell.xib */,
+			);
+			path = ThreePhotoTabBar;
 			sourceTree = "<group>";
 		};
 		5A70675CE22EB1876BA4CB18 /* Pods */ = {
@@ -209,7 +251,9 @@
 				1D72AF372CE628F300DFCF51 /* CheerUp3.png in Resources */,
 				1D5712BE2CDB315A006850D4 /* Assets.xcassets in Resources */,
 				1D8270362CE6227500A2C3B6 /* Cheer Up.png in Resources */,
+				1D8F6C792CFD968A00A80E90 /* PhotoCVCell.xib in Resources */,
 				1D5712C12CDB315A006850D4 /* Base in Resources */,
+				1D9CE7332CF6FD040005349E /* CheerUpTVCell.xib in Resources */,
 				1D5712D32CE479FB006850D4 /* NotificationMassege.json in Resources */,
 				1D72AF382CE628F300DFCF51 /* CheerUp2.png in Resources */,
 				1D72AF672CEB3A1F00DFCF51 /* CustomAlertViewController.storyboard in Resources */,
@@ -254,10 +298,14 @@
 				1D5712BC2CDB3159006850D4 /* CheerUP.xcdatamodeld in Sources */,
 				1D5712B62CDB3159006850D4 /* WriteViewController.swift in Sources */,
 				1D72AF3E2CEB1AD500DFCF51 /* LoginVC.swift in Sources */,
+				1D8F6C7A2CFD968A00A80E90 /* PhotoCVCell.swift in Sources */,
 				1D5712B22CDB3159006850D4 /* AppDelegate.swift in Sources */,
+				1D9CE7322CF6FD040005349E /* CheerUpTVCell.swift in Sources */,
 				1D5712B42CDB3159006850D4 /* SceneDelegate.swift in Sources */,
 				1D72AF3A2CEB0A3100DFCF51 /* Message.swift in Sources */,
+				1D9CE72F2CEC9C5E0005349E /* CheerUpViewController.swift in Sources */,
 				1D72AF6C2CEB400900DFCF51 /* CustomAlertViewController.swift in Sources */,
+				1D8F6C762CFD959000A80E90 /* PhotoGalleryVC.swift in Sources */,
 				1D8270332CE5EA4B00A2C3B6 /* ReadTableViewCell.swift in Sources */,
 				1D5712CF2CDB6283006850D4 /* TextViewController.swift in Sources */,
 				1D5712D12CDE03F2006850D4 /* EditViewController.swift in Sources */,

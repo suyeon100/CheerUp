@@ -39,5 +39,6 @@ func getMessageForToday(startDate: Date, messages: [Message]) -> String? {
     }
 
     let currentDay = daysPassed + 1 // 1일부터 시작
+    print("currentDay == \(currentDay)")
     return messages.first { $0.day == currentDay }?.message
 }

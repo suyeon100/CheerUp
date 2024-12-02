@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func scheduleDailyNotification(message: String, hour: Int, minute: Int) {
         var dateComponents = DateComponents()
-        dateComponents.hour = hour  // 오전 8시
+        dateComponents.hour = hour
         dateComponents.minute = minute
 
         let content = UNMutableNotificationContent()
@@ -50,7 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UserDefaults.standard.set(startDate, forKey: "startDate")
 
         if let message = getMessageForToday(startDate: startDate, messages: messages) {
-            scheduleDailyNotification(message: message, hour: 17, minute: 0) // 9시 알림
+            scheduleDailyNotification(message: message, hour: 23, minute: 0)
             print("오늘의 메세지 == \(message)")
         }
     }
